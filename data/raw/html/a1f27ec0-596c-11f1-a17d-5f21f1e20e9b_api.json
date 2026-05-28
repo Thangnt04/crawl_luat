@@ -1,0 +1,347 @@
+{
+  "id": "a1f27ec0-596c-11f1-a17d-5f21f1e20e9b",
+  "docType": {
+    "id": "0a5362e8-cdca-436e-96cd-979598df3b16",
+    "name": "Quyết định",
+    "code": "QĐ",
+    "parentCode": null,
+    "parentName": null
+  },
+  "docNum": "53/2026/QĐ-UBND",
+  "title": "Quyết định 53/2026/QĐ-UBND Ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn thành phố Cần Thơ",
+  "issueDate": "2026-05-26T00:00:00",
+  "effFrom": "2026-06-09T00:00:00",
+  "effTo": null,
+  "publicDate": null,
+  "effStatus": {
+    "id": "dc434caf-9223-40de-a759-d4f2e3f7b06f",
+    "name": "Chưa có hiệu lực",
+    "code": "CCHL",
+    "parentCode": null,
+    "parentName": null
+  },
+  "status": "Publish",
+  "lang": null,
+  "defaultLanguage": "VN",
+  "updatedBy": "cto_bientap",
+  "updatedDate": "2026-05-27T09:34:11",
+  "agencyName": "UBND Thành phố Cần Thơ",
+  "organization": {
+    "id": "2645fe48-2d1d-4959-9196-de8cb15c8560",
+    "code": "4",
+    "name": "Cần Thơ",
+    "nameEn": "Cần Thơ",
+    "shortName": null,
+    "orgType": "1"
+  },
+  "isLw": false,
+  "documentContent": {
+    "id": "a1f27ec0-596c-11f1-a17d-5f21f1e20e9b",
+    "title": null,
+    "content": "<html>\n <head></head>\n <body>\n  <div class=\"docx-header\">\n   <p style=\"text-align: center;\"><span style=\"font-size: 13.0pt;\">2</span></p>\n   <p>&nbsp;</p>\n  </div>\n  <table border=\"0\" style=\"border-collapse: collapse; width: 100%; margin: 15px 0; border: none;\">\n   <tbody>\n    <tr>\n     <td style=\"; border: none; padding: 8px;\">\n      <p style=\"padding-left: 14.2pt; text-align: center;\"><span style=\"font-weight: bold;\">ỦY BAN NHÂN DÂN </span></p>\n      <p style=\"text-align: center;\"><span style=\"font-weight: bold;\">THÀNH PHỐ CẦN THƠ</span></p>\n      <p style=\"text-align: center;\"><span style=\"font-size: 13.0pt;\">Số: 53/2026/QĐ-UBND</span></p></td>\n     <td style=\"; border: none; padding: 8px;\">\n      <p style=\"text-align: center;\"><span style=\"font-weight: bold; font-size: 13.0pt;\">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</span></p>\n      <p style=\"text-align: center;\"><span style=\"font-weight: bold;\">Độc lập - Tự do - Hạnh phúc</span></p>\n      <p style=\"text-align: center;\"><span style=\"font-style: italic; font-size: 13.0pt;\">Cần Thơ, ngày 26 tháng 5 năm 2026</span></p>\n      <p>&nbsp;</p></td>\n    </tr>\n   </tbody>\n  </table>\n  <p style=\"text-align: center;\"><span style=\"font-weight: bold;\">QUYẾT ĐỊNH</span></p>\n  <p style=\"text-align: center;\"><span style=\"font-weight: bold;\">Ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức </span></p>\n  <p style=\"text-align: center;\"><span style=\"font-weight: bold;\">trên địa bàn thành phố Cần Thơ</span></p>\n  <p>&nbsp;</p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Luật Tổ chức chính quyền địa phương số <a href=\"/van-ban/chi-tiet/178340\" target=\"_blank\" rel=\"noopener noreferrer\">72/2025/QH15</a>; </span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Luật Cán bộ, công chức số <a href=\"/van-ban/chi-tiet/179106\" target=\"_blank\" rel=\"noopener noreferrer\">80/2025/QH15</a>;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Luật Viên chức số <a href=\"/van-ban/chi-tiet/26355\" target=\"_blank\" rel=\"noopener noreferrer\"></a><a href=\"/van-ban/chi-tiet/26061\" target=\"_blank\" rel=\"noopener noreferrer\">58/2010/QH12</a>;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Luật sửa đổi, bổ sung một số điều của Luật Cán bộ, công chức và Luật Viên chức số <a href=\"/van-ban/chi-tiet/139884\" target=\"_blank\" rel=\"noopener noreferrer\">52/2019/QH14</a>; </span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Nghị định số <a href=\"/van-ban/chi-tiet/124688\" target=\"_blank\" rel=\"noopener noreferrer\">101/2017/NĐ-CP</a> của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Nghị định số <a href=\"/van-ban/chi-tiet/150107\" target=\"_blank\" rel=\"noopener noreferrer\">89/2021/NĐ-CP</a> của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số <a href=\"/van-ban/chi-tiet/124688\" target=\"_blank\" rel=\"noopener noreferrer\">101/2017/NĐ-CP</a> ngày 01 tháng 9 năm 2017 của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Nghị định số <a href=\"/van-ban/chi-tiet/179122\" target=\"_blank\" rel=\"noopener noreferrer\">171/2025/NĐ-CP</a> của Chính phủ quy định về đào tạo, bồi dưỡng công chức;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Thông tư số <a href=\"/van-ban/chi-tiet/161764\" target=\"_blank\" rel=\"noopener noreferrer\">03/2023/TT-BNV</a> của Bộ trưởng Bộ Nội vụ hướng dẫn một số quy định của Nghị định số <a href=\"/van-ban/chi-tiet/124688\" target=\"_blank\" rel=\"noopener noreferrer\">101/2017/NĐ-CP</a> ngày 01 tháng 9 năm 2017 của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức và Nghị định số <a href=\"/van-ban/chi-tiet/150107\" target=\"_blank\" rel=\"noopener noreferrer\">89/2021/NĐ-CP</a> ngày 18 tháng 10 năm 2021 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số <a href=\"/van-ban/chi-tiet/124688\" target=\"_blank\" rel=\"noopener noreferrer\">101/2017/NĐ-CP</a> của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Thông tư số <a href=\"/van-ban/chi-tiet/185799\" target=\"_blank\" rel=\"noopener noreferrer\">100/2025/TT-BTC</a> của Bộ trưởng Bộ Tài chính hướng dẫn việc lập dự toán, quản lý, sử dụng và quyết toán kinh phí dành cho công tác đào tạo, bồi dưỡng cán bộ, công chức, viên chức;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Căn cứ Thông tư số <a href=\"/van-ban/chi-tiet/187844\" target=\"_blank\" rel=\"noopener noreferrer\">03/2026/TT-BNV</a> của Bộ trưởng Bộ Nội vụ hướng dẫn một số quy định của Nghị định số <a href=\"/van-ban/chi-tiet/179122\" target=\"_blank\" rel=\"noopener noreferrer\">171/2025/NĐ-CP</a> ngày 30 tháng 6 năm 2025 của Chính phủ quy định về đào tạo, bồi dưỡng công chức;</span></p>\n  <p style=\"text-align: justify;\"><span style=\"font-style: italic;\">Theo đề nghị của Giám đốc Sở Nội vụ;</span></p>\n  <p style=\"text-align: justify;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"font-style: italic;\">Ủy ban nhân dân ban hành Quyết định ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn thành phố Cần Thơ</span>.</p>\n  <p id=\"a282b0da-596c-11f1-b8e4-cb196137414c\" class=\"prov-article\" style=\"font-family: 'Times New Roman', Times, serif;\"><strong>Điều 1. Ban hành kèm theo Quyết định này Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn thành phố Cần Thơ.</strong></p>\n  <p id=\"a282b0e4-596c-11f1-a01d-2516f7b25faa\" class=\"prov-article\" style=\"font-family: 'Times New Roman', Times, serif;\"><strong>Điều 2. Hiệu lực thi hành</strong></p>\n  <p id=\"a282b0e4-596c-11f1-a01d-2516f7b25faa\" class=\"prov-content\" style=\"font-family: 'Times New Roman', Times, serif;\">Quyết định này có hiệu lực thi hành kể từ ngày 09 tháng 6 năm 2026.<br>\n    Các Quyết định sau đây hết hiệu lực từ ngày Quyết định này có hiệu lực thi hành:</p>\n  <p id=\"a282b0ee-596c-11f1-9592-df62634a1111\" class=\"prov-item\" style=\"font-family: 'Times New Roman', Times, serif;\">a) Quyết định số 14/2019/QĐ-UBND ngày 27 tháng 6 năm 2019 của Ủy ban nhân dân tỉnh Sóc Trăng ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn tỉnh Sóc Trăng.</p>\n  <p id=\"a282b0f8-596c-11f1-845d-f7c8bbf4967e\" class=\"prov-item\" style=\"font-family: 'Times New Roman', Times, serif;\">b) Quyết định số 26/2024/QĐ-UBND ngày 31 tháng 7 năm 2024 của Ủy ban nhân dân tỉnh Sóc Trăng về sửa đổi, bổ sung một số điều của Quy chế ban hành kèm theo Quyết định số 14/2019/QĐ-UBND ngày 27 tháng 6 năm 2019 của Ủy ban nhân dân tỉnh Sóc Trăng ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn tỉnh Sóc Trăng.</p>\n  <p id=\"a282b102-596c-11f1-8f45-39756bc0dbd4\" class=\"prov-clause\" style=\"font-family: 'Times New Roman', Times, serif;\">3. Trường hợp văn bản viện dẫn tại Quyết định này được sửa đổi, bổ sung hoặc thay thế bằng văn bản mới thì được áp dụng theo các văn bản sửa đổi, bổ sung hoặc thay thế.</p>\n  <p id=\"a282b10c-596c-11f1-b994-8f9e8da50b14\" class=\"prov-article\" style=\"font-family: 'Times New Roman', Times, serif;\"><strong>Điều 3. Tổ chức thực hiện</strong></p>\n  <p id=\"a282b10c-596c-11f1-b994-8f9e8da50b14\" class=\"prov-content\" style=\"font-family: 'Times New Roman', Times, serif;\">Chánh Văn phòng Ủy ban nhân dân thành phố, Giám đốc Sở Nội vụ, Giám đốc Sở, Thủ trưởng cơ quan ban, ngành thành phố, người đứng đầu tổ chức hành chính, đơn vị sự nghiệp công lập thuộc Ủy ban nhân dân thành phố; Chủ tịch Ủy ban nhân dân xã, phường và tổ chức, cá nhân có liên quan chịu trách nhiệm thi hành Quyết định này.</p>\n </body>\n</html>"
+  },
+  "documentContentEn": null,
+  "documentContentFileName": "Quyet dinh 53.2026.QD.UBND.pdf",
+  "documentContentFileDocName": "Quyet dinh 53.2026.QD.UBND.docx",
+  "documentIssues": [
+    {
+      "id": "020690f0-5970-11f1-9723-4b487c0a52ec",
+      "agencyId": "407",
+      "agencyName": "UBND Thành phố Cần Thơ",
+      "agencyNameEn": "People's Committee of Can Tho Province",
+      "personId": "3924",
+      "personName": "Nguyễn Văn Khởi",
+      "jobTitleId": "256",
+      "jobTitleCode": "256",
+      "jobTitleName": "Phó Chủ tịch",
+      "orderIndex": 1
+    }
+  ],
+  "documentMajors": [
+    {
+      "id": "61",
+      "name": "Nội vụ",
+      "code": null,
+      "parentCode": null,
+      "parentName": null
+    }
+  ],
+  "documentFields": [
+    {
+      "id": "d5a47da1-1cac-4136-b233-da710a21cbbe",
+      "name": "Cán bộ, công chức",
+      "code": null,
+      "parentCode": null,
+      "parentName": null
+    }
+  ],
+  "documentRelatedList": [],
+  "provisionTree": null,
+  "references": [
+    {
+      "id": "1f44d550-5970-11f1-8efa-b92a71a26073",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "178340",
+        "docType": "11025e19-2dd6-4165-85ad-ab6241186a1a",
+        "docNum": "72/2025/QH15",
+        "title": "Luật Tổ chức chính quyền địa phương số 72/2025/QH15",
+        "docAbs": null,
+        "issueDate": "2025-06-16T00:00:00",
+        "effFrom": "2025-06-16T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d55a-5970-11f1-aec4-c5bdae1607f5",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "179106",
+        "docType": "11025e19-2dd6-4165-85ad-ab6241186a1a",
+        "docNum": "80/2025/QH15",
+        "title": "Luật Cán bộ, công chức số 80/2025/QH15",
+        "docAbs": null,
+        "issueDate": "2025-06-24T00:00:00",
+        "effFrom": "2025-07-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d564-5970-11f1-a527-8b31049af52c",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "26355",
+        "docType": "11025e19-2dd6-4165-85ad-ab6241186a1a",
+        "docNum": "58/2010/QH12",
+        "title": "Luật Viên chức số 58/2010/QH12",
+        "docAbs": null,
+        "issueDate": "2010-11-15T00:00:00",
+        "effFrom": "2012-01-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d56e-5970-11f1-ab03-034fa46980fa",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "139884",
+        "docType": "11025e19-2dd6-4165-85ad-ab6241186a1a",
+        "docNum": "52/2019/QH14",
+        "title": "Luật sửa đổi, bổ sung một số điều của Luật cán bộ, công chức và Luật viên chức số 52/2019/QH14",
+        "docAbs": null,
+        "issueDate": "2019-11-25T00:00:00",
+        "effFrom": "2020-07-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d578-5970-11f1-8e71-73d5f7b36ce5",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "124688",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "101/2017/NĐ-CP",
+        "title": "Nghị định số 101/2017/NĐ-CP Về đào tạo, bồi dưỡng cán bộ, công chức, viên chức",
+        "docAbs": null,
+        "issueDate": "2017-09-01T00:00:00",
+        "effFrom": "2017-10-21T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d582-5970-11f1-975e-d5ecd224d8c0",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "150107",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "89/2021/NĐ-CP",
+        "title": "Nghị định số 89/2021/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 101/2017/NĐ-CP\nngày 01 tháng 9 năm 2017 của Chính phủ về đào tạo, bồi dưỡng\ncán bộ, công chức, viên chức",
+        "docAbs": null,
+        "issueDate": "2021-10-18T00:00:00",
+        "effFrom": "2021-12-10T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d58c-5970-11f1-b29e-4bb4c29e3605",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "179122",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "171/2025/NĐ-CP",
+        "title": "Nghị định số 171/2025/NĐ-CP Quy định về đào tạo, bồi dưỡng công chức",
+        "docAbs": null,
+        "issueDate": "2025-06-30T00:00:00",
+        "effFrom": "2025-07-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d596-5970-11f1-8ae6-c3f7c51f2d07",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "161764",
+        "docType": "178c63a9-73ff-4fd4-9d91-18d690520090",
+        "docNum": "03/2023/TT-BNV",
+        "title": "Thông tư số 03/2023/TT-BNV Hướng dẫn một số quy định của Nghị định số 101/2017/NĐ-CP ngày 01 tháng 9 năm 2017 của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức và Nghị định số 89/2021/NĐ-CP ngày 18 tháng 10 năm 2021 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 101/2017/NĐ-CP của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức",
+        "docAbs": null,
+        "issueDate": "2023-04-30T00:00:00",
+        "effFrom": "2023-06-15T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d5a0-5970-11f1-89aa-116041f0e077",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "185799",
+        "docType": "178c63a9-73ff-4fd4-9d91-18d690520090",
+        "docNum": "100/2025/TT-BTC",
+        "title": "Thông tư số 100/2025/TT-BTC Hướng dẫn việc lập dự toán, quản lý, sử dụng và quyết toán kinh phí dành cho công tác đào tạo, bồi dưỡng công chức, viên chức",
+        "docAbs": null,
+        "issueDate": "2025-10-28T00:00:00",
+        "effFrom": "2025-10-28T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "1f44d5aa-5970-11f1-a75d-51c9d8b988aa",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "187844",
+        "docType": "178c63a9-73ff-4fd4-9d91-18d690520090",
+        "docNum": "03/2026/TT-BNV",
+        "title": "Thông tư số 03/2026/TT-BNV Hướng dẫn một số quy định của Nghị định số 171/2025/NĐ-CP ngày 30 tháng 6 năm 2025 của Chính phủ quy định về đào tạo, bồi dưỡng công chức",
+        "docAbs": null,
+        "issueDate": "2026-03-26T00:00:00",
+        "effFrom": "2026-05-15T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "85f04330-5974-11f1-b40a-170543bd6b86",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "169072",
+        "docType": "0a5362e8-cdca-436e-96cd-979598df3b16",
+        "docNum": "26/2024/QĐ-UBND",
+        "title": "Quyết định số 26/2024/QĐ-UBND Về Sửa đổi, bổ sung một số điều của Quy chế ban hành kèm theo Quyết định số 14/2019/QĐ-UBND ngày 27 tháng 6 năm 2019 của Ủy ban nhân dân tỉnh Sóc Trăng ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn tỉnh Sóc Trăng",
+        "docAbs": null,
+        "issueDate": "2024-07-31T00:00:00",
+        "effFrom": "2024-08-15T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 1
+    },
+    {
+      "id": "85f04344-5974-11f1-a9ef-ef68410291b7",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "169072",
+        "docType": "0a5362e8-cdca-436e-96cd-979598df3b16",
+        "docNum": "26/2024/QĐ-UBND",
+        "title": "Quyết định số 26/2024/QĐ-UBND Về Sửa đổi, bổ sung một số điều của Quy chế ban hành kèm theo Quyết định số 14/2019/QĐ-UBND ngày 27 tháng 6 năm 2019 của Ủy ban nhân dân tỉnh Sóc Trăng ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn tỉnh Sóc Trăng",
+        "docAbs": null,
+        "issueDate": "2024-07-31T00:00:00",
+        "effFrom": "2024-08-15T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 1
+    },
+    {
+      "id": "85f09150-5974-11f1-872d-194e24b473df",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "136951",
+        "docType": "0a5362e8-cdca-436e-96cd-979598df3b16",
+        "docNum": "14/2019/QĐ-UBND",
+        "title": "Quyết định số 14/2019/QĐ-UBND Ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn tỉnh Sóc Trăng",
+        "docAbs": null,
+        "issueDate": "2019-06-27T00:00:00",
+        "effFrom": "2019-07-10T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 1
+    },
+    {
+      "id": "85f0b86a-5974-11f1-9eb0-c10d23b145a8",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "136951",
+        "docType": "0a5362e8-cdca-436e-96cd-979598df3b16",
+        "docNum": "14/2019/QĐ-UBND",
+        "title": "Quyết định số 14/2019/QĐ-UBND Ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn tỉnh Sóc Trăng",
+        "docAbs": null,
+        "issueDate": "2019-06-27T00:00:00",
+        "effFrom": "2019-07-10T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 1
+    }
+  ],
+  "isEffectAllDocument": false,
+  "isOld": false,
+  "reviewStatus": null,
+  "reviewed": false,
+  "isTranslationDoc": false,
+  "isConsolidatedDocument": false,
+  "isConstitutionDocument": false,
+  "isAdministrativeDocument": false,
+  "viewCount": 6,
+  "hasContent": true,
+  "hasOriginalPdf": null,
+  "hasAIProcessed": true,
+  "hasClauseRelation": true
+}

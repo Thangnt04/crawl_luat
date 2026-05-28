@@ -1,0 +1,373 @@
+{
+  "id": "42b47190-58b6-11f1-918a-b1572390693c",
+  "docType": {
+    "id": "0a5362e8-cdca-436e-96cd-979598df3b16",
+    "name": "Quyết định",
+    "code": "QĐ",
+    "parentCode": null,
+    "parentName": null
+  },
+  "docNum": "54/2026/QĐ-UBND",
+  "title": "Quyết định số 54/2026/QĐ-UBND ban hành quy định định mức kinh tế - kỹ thuật xây dựng cơ sở dữ liệu đất đai trên địa bàn tỉnh Gia Lai",
+  "issueDate": "2026-05-22T00:00:00",
+  "effFrom": "2026-06-05T00:00:00",
+  "effTo": null,
+  "publicDate": null,
+  "effStatus": {
+    "id": "dc434caf-9223-40de-a759-d4f2e3f7b06f",
+    "name": "Chưa có hiệu lực",
+    "code": "CCHL",
+    "parentCode": null,
+    "parentName": null
+  },
+  "status": "Publish",
+  "lang": null,
+  "defaultLanguage": "VN",
+  "updatedBy": "gli_bientap2",
+  "updatedDate": "2026-05-27T09:39:34",
+  "agencyName": "UBND Tỉnh Gia Lai",
+  "organization": {
+    "id": "e3a2471c-f06e-478e-a62a-4fbf5984434f",
+    "code": "11",
+    "name": "Gia Lai",
+    "nameEn": "Gia Lai",
+    "shortName": null,
+    "orgType": "1"
+  },
+  "isLw": false,
+  "documentContent": {
+    "id": "42b47190-58b6-11f1-918a-b1572390693c",
+    "title": null,
+    "content": "<html>\n <head></head>\n <body>\n  <table style=\"width: 84.9463%;\">\n   <tbody>\n    <tr>\n     <td style=\"width: 32.0032%; text-align: center;\">\n      <p><strong>ỦY BAN NHÂN DÂN</strong></p>\n      <p><strong>TỈNH GIA LAI</strong></p>\n      <p>Số: 54/2026/QĐ-UBND</p></td>\n     <td style=\"width: 67.9968%; text-align: center;\">\n      <p><strong>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>\n         Độc lập - Tự do - Hạnh phúc</strong></p>\n      <p><em>&nbsp;Gia Lai, ngày 22 tháng 5 năm 2026</em></p></td>\n    </tr>\n   </tbody>\n  </table>\n  <p style=\"text-align: center;\"><strong>QUYẾT ĐỊNH</strong></p>\n  <p style=\"text-align: center;\"><strong>Ban hành quy định định mức kinh tế - kỹ thuật&nbsp;</strong></p>\n  <p style=\"text-align: center;\"><strong>xây dựng cơ sở dữ liệu đất đai trên địa bàn tỉnh Gia Lai</strong></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Luật Tổ chức chính quyền địa phương số 72/2025/QH15;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15 được sửa đổi, bổ sung bởi Luật số 87/2025/QH15;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Luật Đất đai số 31/2024/QH15 được sửa đổi, bổ sung bởi Luật số 43/2024/QH15, Luật số 47/2024/QH15, Luật số 58/2024/QH15, Luật số 71/2025/QH15, Luật số 84/2025/QH15, Luật số 93/2025/QH15, Luật số 95/2025/QH15; Luật số 116/2025/QH15, Luật số 130/2025/QH15 và Luật số 146/2025/QH15;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 32/2019/NĐ-CP của Chính phủ quy định giao nhiệm vụ, đặt hàng hoặc đấu thầu cung cấp sản phẩm, dịch vụ công sử dụng ngân sách nhà nước từ nguồn kinh phí chi thường xuyên; </em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 106/2020/NĐ-CP của Chính phủ về vị trí việc làm và số lượng người làm việc trong đơn vị sự nghiệp công lập;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 145/2020/NĐ-CP của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Bộ luật Lao động về điều kiện lao động và quan hệ lao động;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 44/2025/NĐ-CP của Chính phủ về quản lý lao động, tiền lương, thù lao, tiền thưởng trong doanh nghiệp nhà nước;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 60/2021/NĐ-CP của Chính phủ quy định về cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập được sửa đổi, bổ sung bởi Nghị định số 111/2025/NĐ-CP;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 151/2025/NĐ-CP của Chính phủ quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 214/2025/NĐ-CP của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Đấu thầu về lựa chọn nhà thầu;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Nghị định số 49/2026/NĐ-CP của Chính phủ quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Thông tư số 12/2022/TT-BTNMT của Bộ trưởng Bộ Tài nguyên và Môi trường sửa đổi, bổ sung một số quy định về tiêu chuẩn chức danh nghề nghiệp viên chức ngành tài nguyên và môi trường;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Thông tư số 141/2025/TT-BTC của Bộ trưởng Bộ Tài chính về hướng dẫn chế độ quản lý, tính hao mòn, khấu hao tài sản cố định tại cơ quan, tổ chức, đơn vị và tài sản cố định do nhà nước giao cho doanh nghiệp quản lý không tính thành phần vốn nhà nước tại doanh nghiệp;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Thông tư số 09/2024/TT-BTNMT của Bộ trưởng Bộ Tài nguyên và Môi trường quy định về nội dung, cấu trúc, kiểu thông tin cơ sở dữ liệu quốc gia về đất đai và yêu cầu kỹ thuật đối với phần mềm ứng dụng của Hệ thống thông tin quốc gia về đất đai;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Thông tư số 25/2024/TT-BTNMT của Bộ trưởng Bộ Tài nguyên và Môi trường quy định về quy trình xây dựng cơ sở dữ liệu quốc gia về đất đai;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Thông tư số 23/2025/TT-BNNMT của Bộ trưởng Bộ Nông nghiệp và Môi trường về quy định phân cấp, phân định thẩm quyền quản lý nhà nước trong lĩnh vực đất đai;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Căn cứ Thông tư số 19/2026/TT-BNNMT của Bộ trưởng Bộ Nông nghiệp và Môi trường về Quy định kỹ thuật thực hiện lồng ghép nội dung đo đạc lập bản đồ địa chính, đăng ký đất đai, lập hồ sơ địa chính và xây dựng cơ sở dữ liệu quốc gia về đất đai.</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Theo đề nghị của Sở Nông nghiệp và Môi trường; kết quả thẩm định của Sở Tư pháp và ý kiến thống nhất của Thành viên Ủy ban nhân dân tỉnh tại Thông báo số 380/TB-UBND ngày 16 tháng 5 năm 2026;</em></p>\n  <p class=\"prov-part\" style=\"font-size: 14px; text-align: left;\" id=\"4306fe60-58b6-11f1-8e22-05ff22688e58\"><em>Ủy ban nhân dân ban hành Quyết định Quy định định mức kinh tế - kỹ thuật xây dựng cơ sở dữ liệu đất đai trên địa bàn tỉnh Gia Lai.</em></p>\n  <p class=\"prov-article\" style=\"font-size: 14px;\" id=\"4307e8c0-58b6-11f1-95f3-718827df4aac\"><strong>Điều 1.&nbsp;</strong>Ban hành kèm theo Quyết định này Quy định định mức kinh tế - kỹ thuật xây dựng cơ sở dữ liệu đất đai trên địa bàn tỉnh Gia Lai.</p>\n  <p class=\"prov-article\" style=\"font-size: 14px;\" id=\"4308fa30-58b6-11f1-8236-1f531d83e07b\"><strong>Điều 2. Điều khoản thi hành</strong></p>\n  <p class=\"prov-clause\" style=\"font-size: 14px;\" id=\"430a32b0-58b6-11f1-a132-b711d1705ccb\">1. Quyết định này có hiệu lực thi hành kể từ ngày tháng năm 2026.</p>\n  <p class=\"prov-clause\" style=\"font-size: 14px;\" id=\"430af600-58b6-11f1-a616-ddf85d6b286c\">2. Đối với các nhiệm vụ, dự án về xây dựng cơ sở dữ liệu đất đai đã được phê duyệt, thực hiện trước ngày Quyết định này có hiệu lực thi hành mà có hạng mục công việc đã thực hiện và sản phẩm đã được nghiệm thu cấp đơn vị thi công thì tiếp tục thực hiện theo thiết kế kỹ thuật-dự toán, phương án nhiệm vụ đã được phê duyệt mà không phải điều chỉnh lại theo quy định tại Quyết định này.</p>\n  <p class=\"prov-clause\" style=\"font-size: 14px;\" id=\"430c0770-58b6-11f1-b7a7-c104536e360b\">3. Chánh Văn phòng Ủy ban nhân dân tỉnh; Giám đốc các Sở, Thủ trưởng các cơ quan thuộc Ủy ban nhân dân tỉnh, Chủ tịch Ủy ban nhân dân các xã, phường và các tổ chức, cá nhân khác có liên quan chịu trách nhiệm thi hành Quyết định này./.</p>\n  <table style=\"width: 96.9189%;\">\n   <tbody>\n    <tr>\n     <td style=\"width: 56.533%;\">\n      <p><strong><em>Nơi nhận:</em></strong><br>\n        - Như Điều 2;</p>\n      <p>- Bộ NN và MT;</p>\n      <p>- Cục KTVB&amp;QLXLVPHC (Bộ TP);</p>\n      <p>- TT Tỉnh ủy;</p>\n      <p>- TT HĐND tỉnh;</p>\n      <p>- Đoàn ĐBQH tỉnh;</p>\n      <p>- UBMTTQVN tỉnh;</p>\n      <p>- CT, PCT UBND tỉnh;</p>\n      <p>- CVP, PVP VX, NN;</p>\n      <p>- TTPVHCC;</p>\n      <p>- Phòng: NNMT;</p>\n      <p>- Lưu: VT, N<sub>1</sub>, V<sub>9, </sub>T<sub>4</sub>.</p></td>\n     <td style=\"width: 43.467%;\">\n      <p style=\"text-align: center;\"><strong> TM. ỦY BAN NHÂN DÂN<br>\n         KT. CHỦ TỊCH<br>\n         PHÓ CHỦ TỊCH<br></strong></p>\n      <p style=\"font-family: 'Times New Roman', Times, serif; text-align: center;\"><strong></strong></p>\n      <p style=\"font-family: 'Times New Roman', Times, serif; text-align: center;\"><strong></strong></p>\n      <p style=\"font-family: 'Times New Roman', Times, serif; text-align: center;\"><strong></strong></p>\n      <p style=\"font-family: 'Times New Roman', Times, serif; text-align: center;\"><strong></strong></p>\n      <p style=\"text-align: center;\"><strong> Nguyễn Tuấn Thanh<br><br><br><br></strong></p></td>\n    </tr>\n   </tbody>\n  </table>\n </body>\n</html>"
+  },
+  "documentContentEn": null,
+  "documentContentFileName": "54_2026_QD-UBND_22052026-signed_02.pdf",
+  "documentContentFileDocName": "54.2026.QĐ-UBND.docx",
+  "documentIssues": [
+    {
+      "id": "42b64650-58b6-11f1-bc4a-13b8fc458f02",
+      "agencyId": "542",
+      "agencyName": "UBND Tỉnh Gia Lai",
+      "agencyNameEn": "People's Committee of Gia Lai Province",
+      "personId": "3164",
+      "personName": "Nguyễn Tuấn Thanh",
+      "jobTitleId": "3692fc40-5cf2-4bab-be62-c1ed39585d2b",
+      "jobTitleCode": "PCT(HĐ,UB)",
+      "jobTitleName": "Phó Chủ tịch (Hội đồng, Uỷ ban)",
+      "orderIndex": 1
+    }
+  ],
+  "documentMajors": [
+    {
+      "id": "nganh_442",
+      "name": "Nông nghiệp và Môi trường",
+      "code": null,
+      "parentCode": null,
+      "parentName": null
+    }
+  ],
+  "documentFields": [
+    {
+      "id": "6572",
+      "name": "Đất đai",
+      "code": null,
+      "parentCode": null,
+      "parentName": null
+    }
+  ],
+  "documentRelatedList": [
+    {
+      "id": "42b81b10-58b6-11f1-9451-cd706c47d8ba",
+      "fileName": "Quy dinh ve Dinh muc KTKT XDCSDL kem theo QD 54.pdf",
+      "relatedType": "APPENDIX",
+      "fileTitle": "Quy định",
+      "fileOrder": 1
+    }
+  ],
+  "provisionTree": null,
+  "references": [
+    {
+      "id": "ed385cf0-58cd-11f1-8b64-8be98b20303b",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "178340",
+        "docType": "11025e19-2dd6-4165-85ad-ab6241186a1a",
+        "docNum": "72/2025/QH15",
+        "title": "Luật Tổ chức chính quyền địa phương số 72/2025/QH15",
+        "docAbs": null,
+        "issueDate": "2025-06-16T00:00:00",
+        "effFrom": "2025-06-16T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385cfa-58cd-11f1-92ed-0d7e4fa8f303",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "175440",
+        "docType": "11025e19-2dd6-4165-85ad-ab6241186a1a",
+        "docNum": "64/2025/QH15",
+        "title": "Luật Ban hành văn bản quy phạm pháp luật số 64/2025/QH15",
+        "docAbs": null,
+        "issueDate": "2025-02-19T00:00:00",
+        "effFrom": "2025-04-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d04-58cd-11f1-8b35-d114ab5fc58c",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "177815",
+        "docType": "11025e19-2dd6-4165-85ad-ab6241186a1a",
+        "docNum": "31/2024/QH15",
+        "title": "Luật Đất đai số 31/2024/QH15",
+        "docAbs": null,
+        "issueDate": "2024-01-18T00:00:00",
+        "effFrom": "2025-01-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d0e-58cd-11f1-97f5-ddf8bc6be0e3",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "186273",
+        "docType": "044d941c-40de-45b9-ae84-51f5a730bfe0",
+        "docNum": "254/2025/QH15",
+        "title": "Nghị quyết số 254/2025/QH15 Quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai",
+        "docAbs": null,
+        "issueDate": "2025-12-11T00:00:00",
+        "effFrom": "2026-01-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d18-58cd-11f1-b9b6-9f77c05b692c",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "135066",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "32/2019/NĐ-CP",
+        "title": "Nghị định số 32/2019/NĐ-CP Quy định giao nhiệm vụ, đặt hàng hoặc đấu thầu cung cấp sản phẩm, dịch vụ công sử dụng ngân sách nhà nước từ nguồn kinh phí chi thường xuyên",
+        "docAbs": null,
+        "issueDate": "2019-04-10T00:00:00",
+        "effFrom": "2019-06-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d22-58cd-11f1-84a9-d75972b2d5fa",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "143948",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "106/2020/NĐ-CP",
+        "title": "Nghị định số 106/2020/NĐ-CP vị trí việc làm và số lượng người làm việc trong đơn vị sự nghiệp công lập",
+        "docAbs": null,
+        "issueDate": "2020-09-10T00:00:00",
+        "effFrom": "2020-11-15T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d2c-58cd-11f1-9ee8-c751e37079db",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "152668",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "145/2020/NĐ-CP",
+        "title": "Nghị định số 145/2020/NĐ-CP Quy định chi tiết và hướng dẫn thi hành một số điều của Bộ luật Lao động về điều kiện lao động và quan hệ lao động",
+        "docAbs": null,
+        "issueDate": "2020-12-14T00:00:00",
+        "effFrom": "2021-02-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d36-58cd-11f1-93f7-cf06734fa97c",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "175789",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "44/2025/NĐ-CP",
+        "title": "Nghị định số 44/2025/NĐ-CP Quản lý lao động, tiền lương, thù lao, tiền thưởng trong doanh nghiệp nhà nước",
+        "docAbs": null,
+        "issueDate": "2025-02-28T00:00:00",
+        "effFrom": "2025-04-15T00:00:00",
+        "effTo": "2025-09-15T00:00:00",
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d40-58cd-11f1-9364-c178425401ee",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "151168",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "60/2021/NĐ-CP",
+        "title": "Nghị định số 60/2021/NĐ-CP Quy định cơ chế tự chủ tài chính của đơn vị sự nghiệp công lập",
+        "docAbs": null,
+        "issueDate": "2021-06-21T00:00:00",
+        "effFrom": "2021-08-15T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d4a-58cd-11f1-a0e0-fb79ea7dd394",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "178259",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "151/2025/NĐ-CP",
+        "title": "Nghị định số 151/2025/NĐ-CP Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp, phân quyền, phân cấp trong lĩnh vực đất đai",
+        "docAbs": null,
+        "issueDate": "2025-06-12T00:00:00",
+        "effFrom": "2025-07-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d54-58cd-11f1-9b51-07f524b32f08",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "180764",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "214/2025/NĐ-CP",
+        "title": "Nghị định số 214/2025/NĐ-CP Quy định chỉ tiết một số điều và biện pháp thi hành\nLuật Đấu thầu về lựa chọn nhà thầu",
+        "docAbs": null,
+        "issueDate": "2025-08-04T00:00:00",
+        "effFrom": "2025-08-04T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d5e-58cd-11f1-800a-b7a1725841f7",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "187157",
+        "docType": "0d08b84c-7de7-4800-8760-2a68265e7890",
+        "docNum": "49/2026/NĐ-CP",
+        "title": "Nghị định số 49/2026/NĐ-CP Quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 254/2025/QH15 của Quốc hội quy định một số cơ chế, chính sách tháo gỡ khó khăn, vướng mắc trong tổ chức thi hành Luật Đất đai",
+        "docAbs": null,
+        "issueDate": "2026-01-31T00:00:00",
+        "effFrom": "2026-01-31T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d68-58cd-11f1-b1f1-f9255cd5ad98",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "166131",
+        "docType": "178c63a9-73ff-4fd4-9d91-18d690520090",
+        "docNum": "12/2022/TT-BTNMT",
+        "title": "Thông tư số 12/2022/TT-BTNMT Sửa đổi, bổ sung một số quy định về tiêu chuẩn chức danh nghề nghiệp viên chức ngành tài nguyên và môi trường",
+        "docAbs": null,
+        "issueDate": "2022-10-24T00:00:00",
+        "effFrom": "2022-12-09T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d72-58cd-11f1-8d6c-e91ab310529b",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "173707",
+        "docType": "178c63a9-73ff-4fd4-9d91-18d690520090",
+        "docNum": "25/2024/TT-BTNMT",
+        "title": "Thông tư số 25/2024/TT-BTNMT Quy định về quy trình xây dựng cơ sở dữ liệu quốc gia về đất đai",
+        "docAbs": null,
+        "issueDate": "2024-11-26T00:00:00",
+        "effFrom": "2025-01-10T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    },
+    {
+      "id": "ed385d7c-58cd-11f1-9b20-1f57c1ea2c95",
+      "isRootDocument": null,
+      "isConsolidatedDocument": null,
+      "targetDocument": {
+        "id": "178604",
+        "docType": "178c63a9-73ff-4fd4-9d91-18d690520090",
+        "docNum": "23/2025/TT-BNNMT",
+        "title": "Thông tư số 23/2025/TT-BNNMT Quy định phân cấp, phân định thẩm quyền quản lý nhà nước trong lĩnh vực đất đai",
+        "docAbs": null,
+        "issueDate": "2025-06-20T00:00:00",
+        "effFrom": "2025-07-01T00:00:00",
+        "effTo": null,
+        "status": "Publish"
+      },
+      "referenceProvisions": null,
+      "referenceType": 3
+    }
+  ],
+  "isEffectAllDocument": false,
+  "isOld": false,
+  "reviewStatus": null,
+  "reviewed": false,
+  "isTranslationDoc": false,
+  "isConsolidatedDocument": false,
+  "isConstitutionDocument": false,
+  "isAdministrativeDocument": false,
+  "viewCount": 7,
+  "hasContent": true,
+  "hasOriginalPdf": null,
+  "hasAIProcessed": false,
+  "hasClauseRelation": null
+}

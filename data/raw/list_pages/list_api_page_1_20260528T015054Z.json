@@ -1,0 +1,210 @@
+{
+  "success": true,
+  "statusCode": 200,
+  "message": "OK",
+  "messageCode": "ok",
+  "debugMessage": "",
+  "data": {
+    "total": 168102,
+    "pageNumber": 1,
+    "pageSize": 5,
+    "items": [
+      {
+        "id": "a1f27ec0-596c-11f1-a17d-5f21f1e20e9b",
+        "title": "Quyết định 53/2026/QĐ-UBND Ban hành Quy chế đào tạo, bồi dưỡng cán bộ, công chức, viên chức trên địa bàn thành phố Cần Thơ",
+        "docNum": "53/2026/QĐ-UBND",
+        "docType": {
+          "id": "0a5362e8-cdca-436e-96cd-979598df3b16",
+          "name": "Quyết định",
+          "code": "QĐ",
+          "parentCode": "VBQPPL",
+          "parentName": null
+        },
+        "issueDate": "2026-05-26T00:00:00",
+        "effFrom": "2026-06-09T00:00:00",
+        "effTo": null,
+        "publicDate": null,
+        "updatedDate": null,
+        "effStatus": {
+          "id": "dc434caf-9223-40de-a759-d4f2e3f7b06f",
+          "code": "CCHL",
+          "name": "Chưa có hiệu lực",
+          "parentCode": null,
+          "parentName": null
+        },
+        "documentMajors": null,
+        "isNew": true,
+        "documentRelatedList": null,
+        "sourceDocumentId": null,
+        "managementUnitIds": [
+          "2645fe48-2d1d-4959-9196-de8cb15c8560"
+        ],
+        "administrativeUnitIds": [
+          "e370ab2e-7901-4c46-a32b-1e32e6497e9a"
+        ],
+        "agencyIds": [
+          "407"
+        ],
+        "agencyName": "UBND Thành phố Cần Thơ",
+        "isLw": false
+      },
+      {
+        "id": "3aabfdd0-5972-11f1-bb57-4f2eae9ae1c1",
+        "title": "Quyết định 44/2026/QĐ-UBND Bãi bỏ các văn bản quy phạm pháp luật của Ủy ban nhân dân thành phố Huế",
+        "docNum": "44/2026/QĐ-UBND",
+        "docType": {
+          "id": "0a5362e8-cdca-436e-96cd-979598df3b16",
+          "name": "Quyết định",
+          "code": "QĐ",
+          "parentCode": "VBQPPL",
+          "parentName": null
+        },
+        "issueDate": "2026-05-25T00:00:00",
+        "effFrom": "2026-06-04T00:00:00",
+        "effTo": null,
+        "publicDate": null,
+        "updatedDate": null,
+        "effStatus": {
+          "id": "dc434caf-9223-40de-a759-d4f2e3f7b06f",
+          "code": "CCHL",
+          "name": "Chưa có hiệu lực",
+          "parentCode": null,
+          "parentName": null
+        },
+        "documentMajors": null,
+        "isNew": true,
+        "documentRelatedList": null,
+        "sourceDocumentId": null,
+        "managementUnitIds": [
+          "0eafb10d-80f9-496f-b9d0-7af3b1a5e9a9"
+        ],
+        "administrativeUnitIds": [
+          "8756d1af-99d6-464b-80a9-c549a7f28e25"
+        ],
+        "agencyIds": [
+          "714"
+        ],
+        "agencyName": "UBND Thành phố Huế",
+        "isLw": false
+      },
+      {
+        "id": "2eb650c0-5972-11f1-a166-89c27ae6d256",
+        "title": "Quyết định 43/2026/QĐ-UBND Ban hành Quy chế xét tặng Giải thưởng Cố đô về khoa học, công nghệ và đổi mới sáng tạo thành phố Huế",
+        "docNum": "43/2026/QĐ-UBND",
+        "docType": {
+          "id": "0a5362e8-cdca-436e-96cd-979598df3b16",
+          "name": "Quyết định",
+          "code": "QĐ",
+          "parentCode": "VBQPPL",
+          "parentName": null
+        },
+        "issueDate": "2026-05-25T00:00:00",
+        "effFrom": "2026-06-04T00:00:00",
+        "effTo": null,
+        "publicDate": null,
+        "updatedDate": null,
+        "effStatus": {
+          "id": "dc434caf-9223-40de-a759-d4f2e3f7b06f",
+          "code": "CCHL",
+          "name": "Chưa có hiệu lực",
+          "parentCode": null,
+          "parentName": null
+        },
+        "documentMajors": null,
+        "isNew": true,
+        "documentRelatedList": null,
+        "sourceDocumentId": null,
+        "managementUnitIds": [
+          "0eafb10d-80f9-496f-b9d0-7af3b1a5e9a9"
+        ],
+        "administrativeUnitIds": [
+          "8756d1af-99d6-464b-80a9-c549a7f28e25"
+        ],
+        "agencyIds": [
+          "714"
+        ],
+        "agencyName": "UBND Thành phố Huế",
+        "isLw": false
+      },
+      {
+        "id": "df6a76f0-599d-11f1-8eb6-8dfe5cce0aa8",
+        "title": "Quyết định 59/2026/QĐ-UBND Ban hành Quy định định mức kinh tế - kỹ thuật hoạt động báo in, báo điện tử Báo và phát thanh, truyền hình Gia Lai",
+        "docNum": "59/2026/QĐ-UBND",
+        "docType": {
+          "id": "0a5362e8-cdca-436e-96cd-979598df3b16",
+          "name": "Quyết định",
+          "code": "QĐ",
+          "parentCode": "VBQPPL",
+          "parentName": null
+        },
+        "issueDate": "2026-05-23T00:00:00",
+        "effFrom": "2026-06-05T00:00:00",
+        "effTo": null,
+        "publicDate": null,
+        "updatedDate": null,
+        "effStatus": {
+          "id": "dc434caf-9223-40de-a759-d4f2e3f7b06f",
+          "code": "CCHL",
+          "name": "Chưa có hiệu lực",
+          "parentCode": null,
+          "parentName": null
+        },
+        "documentMajors": null,
+        "isNew": true,
+        "documentRelatedList": null,
+        "sourceDocumentId": null,
+        "managementUnitIds": [
+          "e3a2471c-f06e-478e-a62a-4fbf5984434f"
+        ],
+        "administrativeUnitIds": [
+          "1b72912a-fd07-4723-bfc0-53224a0aec1f"
+        ],
+        "agencyIds": [
+          "542"
+        ],
+        "agencyName": "UBND Tỉnh Gia Lai",
+        "isLw": false
+      },
+      {
+        "id": "77994720-5a30-11f1-a3a2-5dd0c8cab5ad",
+        "title": "Quyết định 60/2026/QĐ-UBND Ban hành Quy chế quản lý, vận hành, kết nối và bảo đảm an toàn thông tin đối với hệ thống thông tin nguồn cấp tỉnh",
+        "docNum": "60/2026/QĐ-UBND",
+        "docType": {
+          "id": "0a5362e8-cdca-436e-96cd-979598df3b16",
+          "name": "Quyết định",
+          "code": "QĐ",
+          "parentCode": "VBQPPL",
+          "parentName": null
+        },
+        "issueDate": "2026-05-23T00:00:00",
+        "effFrom": "2026-07-01T00:00:00",
+        "effTo": null,
+        "publicDate": null,
+        "updatedDate": null,
+        "effStatus": {
+          "id": "dc434caf-9223-40de-a759-d4f2e3f7b06f",
+          "code": "CCHL",
+          "name": "Chưa có hiệu lực",
+          "parentCode": null,
+          "parentName": null
+        },
+        "documentMajors": null,
+        "isNew": true,
+        "documentRelatedList": null,
+        "sourceDocumentId": null,
+        "managementUnitIds": [
+          "e3a2471c-f06e-478e-a62a-4fbf5984434f"
+        ],
+        "administrativeUnitIds": [
+          "1b72912a-fd07-4723-bfc0-53224a0aec1f"
+        ],
+        "agencyIds": [
+          "542"
+        ],
+        "agencyName": "UBND Tỉnh Gia Lai",
+        "isLw": false
+      }
+    ]
+  },
+  "total": 1
+}
