@@ -2,16 +2,49 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
+from .enterprise_taxonomy import match_keywords
 from .http_client import HttpClient
 
 DOC_PATH_PATTERN = re.compile(r"/Pages/vbpq-(van-ban-goc|toanvan)\.aspx", re.IGNORECASE)
 API_DOC_ALL = "https://vbpl-bientap-gateway.moj.gov.vn/api/qtdc/public/doc/all"
+
+
+def _normalize_date_only(value: str) -> str:
+    raw = (value or "").strip()
+    if not raw:
+        return ""
+    try:
+        return datetime.fromisoformat(raw.replace("Z", "+00:00")).date().isoformat()
+    except ValueError:
+        pass
+    try:
+        return date.fromisoformat(raw[:10]).isoformat()
+    except ValueError:
+        return ""
+
+
+def _normalize_datetime(value: str) -> datetime | None:
+    raw = (value or "").strip()
+    if not raw:
+        return None
+    raw = raw.replace("Z", "+00:00")
+    try:
+        if "T" in raw or "+" in raw:
+            dt = datetime.fromisoformat(raw)
+        else:
+            d = date.fromisoformat(raw[:10])
+            dt = datetime(d.year, d.month, d.day, 0, 0, 0)
+        if dt.tzinfo is not None:
+            dt = dt.astimezone(timezone.utc).replace(tzinfo=None)
+        return dt
+    except ValueError:
+        return None
 
 
 def _is_vbpl_url(url: str) -> bool:
@@ -79,17 +112,35 @@ def discover_document_urls(
     return discovered
 
 
+def _api_item_match_fields(item: dict) -> dict[str, object]:
+    return {
+        "title": item.get("title", ""),
+        "document_number": item.get("docNum", ""),
+        "document_type": item.get("docType"),
+        "field": item.get("documentFields") or item.get("documentMajors"),
+        "status": item.get("effStatus"),
+        "agency": item.get("agencyName", ""),
+    }
+
+
 def discover_document_urls_from_api(
     client: HttpClient,
     raw_list_pages_dir: Path,
     max_documents: int = 10,
     since_date: str = "",
+    skip_doc_ids: set[str] | None = None,
+    include_title_keywords: list[str] | None = None,
 ) -> list[str]:
     raw_list_pages_dir.mkdir(parents=True, exist_ok=True)
     page_number = 1
     page_size = min(max(max_documents, 5), 50)
     discovered: list[str] = []
     seen_ids: set[str] = set()
+    skip_ids = skip_doc_ids or set()
+    keyword_filter = [keyword for keyword in (include_title_keywords or []) if str(keyword or "").strip()]
+    skipped_existing = 0
+    skipped_by_keyword = 0
+    normalized_since_dt = _normalize_datetime(since_date)
 
     while len(discovered) < max_documents:
         payload = {
@@ -115,20 +166,35 @@ def discover_document_urls_from_api(
             doc_id = str(item.get("id", "")).strip()
             if not doc_id or doc_id in seen_ids:
                 continue
-            item_date = str(item.get("updatedDate") or item.get("issueDate") or "")[:10]
-            if since_date and item_date and item_date <= since_date:
+            item_dt = _normalize_datetime(str(item.get("updatedDate") or item.get("issueDate") or ""))
+            if normalized_since_dt:
+                if item_dt and item_dt < normalized_since_dt:
+                    continue
+                all_old_in_page = False
+            if doc_id in skip_ids:
+                skipped_existing += 1
                 continue
-            all_old_in_page = False
+            if keyword_filter:
+                keyword_match = match_keywords(_api_item_match_fields(item), keyword_filter)
+                if not keyword_match["is_match"]:
+                    skipped_by_keyword += 1
+                    continue
+            if not normalized_since_dt:
+                all_old_in_page = False
             seen_ids.add(doc_id)
             discovered.append(f"https://vbpl.vn/van-ban/chi-tiet/{doc_id}")
             if len(discovered) >= max_documents:
                 break
 
-        if since_date and all_old_in_page:
+        if normalized_since_dt and all_old_in_page:
             break
 
         total = int(data.get("total") or 0)
         if page_number * page_size >= total:
             break
         page_number += 1
+    if skip_ids:
+        client.logger.info("Skipped %s doc IDs already present in local index during list discovery", skipped_existing)
+    if keyword_filter:
+        client.logger.info("Skipped %s list items not matching list metadata keywords", skipped_by_keyword)
     return discovered

@@ -5,7 +5,7 @@ import re
 import unicodedata
 from datetime import date, datetime, timezone
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -14,6 +14,7 @@ from .clean_text import clean_legal_text
 UUID_PATTERN = re.compile(
     r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
 )
+DOC_DETAIL_ID_PATTERN = re.compile(r"/van-ban/chi-tiet/([^/?#]+)", re.IGNORECASE)
 CLAUSE_RE = re.compile(r"^\s*(\d+)\.\s+(.*)$")
 POINT_RE = re.compile(r"^\s*([a-zA-Z])\)\s+(.*)$")
 
@@ -38,7 +39,8 @@ RELATION_TYPE_MAP = {
 
 def _strip_accents(text: str) -> str:
     normalized = unicodedata.normalize("NFD", text)
-    return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
+    stripped = "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
+    return stripped.replace("Đ", "D").replace("đ", "d")
 
 
 def _normalize_key(text: str) -> str:
@@ -85,6 +87,47 @@ def normalize_date_to_iso(value: Any) -> str:
     return ""
 
 
+def normalize_datetime_to_iso(value: Any) -> str:
+    raw = str(value or "").strip()
+    if not raw:
+        return ""
+    raw = raw.replace("Z", "+00:00")
+    try:
+        if "T" in raw or "+" in raw:
+            dt = datetime.fromisoformat(raw)
+            if dt.tzinfo is not None:
+                dt = dt.astimezone(timezone.utc).replace(tzinfo=None)
+            return dt.isoformat(timespec="seconds")
+        d = date.fromisoformat(raw[:10])
+        return datetime(d.year, d.month, d.day, 0, 0, 0).isoformat(timespec="seconds")
+    except ValueError:
+        pass
+    match = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{4})$", raw)
+    if match:
+        dd, mm, yyyy = match.groups()
+        try:
+            return datetime(int(yyyy), int(mm), int(dd), 0, 0, 0).isoformat(timespec="seconds")
+        except ValueError:
+            return ""
+    match = re.search(r"(\d{4}-\d{2}-\d{2})", raw)
+    if match:
+        return f"{match.group(1)}T00:00:00"
+    return ""
+
+
+def detect_id_type(doc_id: str) -> str:
+    value = str(doc_id or "").strip()
+    if not value:
+        return "unknown"
+    if UUID_PATTERN.fullmatch(value):
+        return "uuid"
+    if value.isdigit():
+        return "numeric"
+    if re.fullmatch(r"[A-Za-z][A-Za-z0-9_-]*", value):
+        return "slug"
+    return "unknown"
+
+
 def _normalize_relation_type(value: Any) -> str:
     if value is None:
         return "unknown"
@@ -92,6 +135,31 @@ def _normalize_relation_type(value: Any) -> str:
         return RELATION_TYPE_MAP.get(int(value), f"unknown_{int(value)}")
     except (TypeError, ValueError):
         return str(value).strip() or "unknown"
+
+
+def _summarize_document_issues(issues: Any) -> tuple[list[dict[str, str]], int]:
+    summarized: list[dict[str, str]] = []
+    total = 0
+    if isinstance(issues, list):
+        total = len(issues)
+        source = issues[:3]
+    elif isinstance(issues, dict):
+        total = 1
+        source = [issues]
+    else:
+        source = []
+
+    for item in source:
+        if not isinstance(item, dict):
+            continue
+        summarized.append(
+            {
+                "personName": str(item.get("personName") or "").strip(),
+                "jobTitleName": str(item.get("jobTitleName") or "").strip(),
+                "agencyName": str(item.get("agencyName") or "").strip(),
+            }
+        )
+    return summarized, total
 
 
 def _extract_title(soup: BeautifulSoup) -> str:
@@ -217,7 +285,19 @@ def _extract_content_text(soup: BeautifulSoup) -> str:
 
 
 def extract_doc_id(source_url: str) -> str:
-    match = UUID_PATTERN.search(source_url or "")
+    url = str(source_url or "").strip()
+    if not url:
+        return ""
+    match = DOC_DETAIL_ID_PATTERN.search(url)
+    if match:
+        return match.group(1).strip()
+    parsed = urlparse(url)
+    query = parse_qs(parsed.query)
+    for key in ("ItemID", "itemid", "id"):
+        values = query.get(key) or []
+        if values and str(values[0]).strip():
+            return str(values[0]).strip()
+    match = UUID_PATTERN.search(url)
     return match.group(0) if match else ""
 
 
@@ -297,6 +377,7 @@ def parse_document_detail_from_api(
     doc_id: str,
     detail_data: dict[str, Any],
     file_items: list[dict[str, Any]] | None = None,
+    source_url: str = "",
 ) -> dict[str, Any]:
     issue = detail_data.get("documentIssues")
     signer = ""
@@ -304,6 +385,7 @@ def parse_document_detail_from_api(
         signer = str(issue[0].get("personName") or "").strip()
     elif isinstance(issue, dict):
         signer = str(issue.get("personName") or "").strip()
+    issue_summary, issue_count = _summarize_document_issues(issue)
 
     summary = ""
     references = detail_data.get("references")
@@ -325,7 +407,7 @@ def parse_document_detail_from_api(
         related_id = ""
         for key in ("relatedDocumentId", "targetDocumentId", "sourceDocumentId", "id"):
             value = str(rel.get(key) or "").strip()
-            if UUID_PATTERN.fullmatch(value):
+            if value:
                 related_id = value
                 break
         if related_id:
@@ -377,6 +459,8 @@ def parse_document_detail_from_api(
     else:
         content_text = clean_legal_text(content_html)
     articles = _build_legal_structure(content_text)
+    canonical_doc_id = doc_id or extract_doc_id(source_url)
+    source = source_url.strip() or f"https://vbpl.vn/van-ban/chi-tiet/{canonical_doc_id}"
 
     return {
         "title": str(detail_data.get("title") or "").strip(),
@@ -386,13 +470,20 @@ def parse_document_detail_from_api(
         "issuing_agency": str(detail_data.get("agencyName") or "").strip(),
         "signer": signer,
         "issued_date": normalize_date_to_iso(detail_data.get("issueDate")),
+        "issued_at": normalize_datetime_to_iso(detail_data.get("issueDate")),
         "effective_date": normalize_date_to_iso(detail_data.get("effFrom")),
+        "effective_at": normalize_datetime_to_iso(detail_data.get("effFrom")),
         "expired_date": normalize_date_to_iso(detail_data.get("effTo")),
+        "expired_at": normalize_datetime_to_iso(detail_data.get("effTo")),
         "gazette_date": normalize_date_to_iso(detail_data.get("publicDate")),
+        "gazette_at": normalize_datetime_to_iso(detail_data.get("publicDate")),
         "updated_date": normalize_date_to_iso(detail_data.get("updatedDate")),
+        "updated_at": normalize_datetime_to_iso(detail_data.get("updatedDate")),
         "status": _safe_get_name(detail_data.get("effStatus")),
         "field": field,
-        "source_url": f"https://vbpl.vn/van-ban/chi-tiet/{doc_id}",
+        "source_url": source,
+        "canonical_doc_id": canonical_doc_id,
+        "id_type": detect_id_type(canonical_doc_id),
         "file_urls": file_urls,
         "related_documents": related_documents,
         "attachments": attachments,
@@ -402,7 +493,8 @@ def parse_document_detail_from_api(
         "candidate_fields": {
             "docType": [str(detail_data.get("docType"))[:200]],
             "effStatus": [str(detail_data.get("effStatus"))[:200]],
-            "documentIssues": [str(detail_data.get("documentIssues"))[:200]],
+            "documentIssues_count": [str(issue_count)],
+            "documentIssues_summary": issue_summary,
         },
     }
 
@@ -442,6 +534,7 @@ def parse_document_detail(page_url: str, raw_html: str) -> dict[str, Any]:
     related_documents = _extract_related_documents(soup, page_url)
     content_text = _extract_content_text(soup)
     articles = _build_legal_structure(content_text)
+    canonical_doc_id = extract_doc_id(page_url)
 
     return {
         "title": title,
@@ -455,9 +548,12 @@ def parse_document_detail(page_url: str, raw_html: str) -> dict[str, Any]:
         "expired_date": normalize_date_to_iso(expired_date),
         "gazette_date": normalize_date_to_iso(gazette_date),
         "updated_date": "",
+        "updated_at": "",
         "status": status,
         "field": field,
         "source_url": page_url,
+        "canonical_doc_id": canonical_doc_id,
+        "id_type": detect_id_type(canonical_doc_id),
         "file_urls": file_urls,
         "related_documents": related_documents,
         "attachments": [{"file_name": "", "display_name": "", "file_type": "url", "url": u} for u in file_urls],
@@ -478,6 +574,8 @@ def build_document_record(
     crawl_time = datetime.now(timezone.utc).isoformat()
     return {
         "id": stable_id,
+        "canonical_doc_id": parsed.get("canonical_doc_id", extract_doc_id(page_url)),
+        "id_type": parsed.get("id_type", detect_id_type(parsed.get("canonical_doc_id", ""))),
         "title": parsed.get("title", ""),
         "document_type": parsed.get("document_type", ""),
         "document_number": parsed.get("document_number", ""),
@@ -485,16 +583,25 @@ def build_document_record(
         "issuing_agency": parsed.get("issuing_agency", ""),
         "signer": parsed.get("signer", ""),
         "issued_date": parsed.get("issued_date", ""),
+        "issued_at": parsed.get("issued_at", ""),
         "effective_date": parsed.get("effective_date", ""),
+        "effective_at": parsed.get("effective_at", ""),
         "expired_date": parsed.get("expired_date", ""),
+        "expired_at": parsed.get("expired_at", ""),
         "gazette_date": parsed.get("gazette_date", ""),
+        "gazette_at": parsed.get("gazette_at", ""),
         "updated_date": parsed.get("updated_date", ""),
+        "updated_at": parsed.get("updated_at", ""),
         "status": parsed.get("status", ""),
         "field": parsed.get("field", ""),
         "source_url": parsed.get("source_url", page_url),
         "file_urls": parsed.get("file_urls", []),
         "related_documents": parsed.get("related_documents", []),
         "attachments": parsed.get("attachments", []),
+        "topic_labels": parsed.get("topic_labels", []),
+        "topic_names": parsed.get("topic_names", []),
+        "matched_keywords": parsed.get("matched_keywords", []),
+        "matched_fields": parsed.get("matched_fields", {}),
         "raw_html_path": raw_html_path,
         "downloaded_files": downloaded_files,
         "full_html_content": parsed.get("full_html_content", ""),

@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 import os
 from dataclasses import dataclass
+from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 
@@ -31,6 +32,7 @@ LOG_DIR = DATA_DIR / "logs"
 JSONL_OUTPUT = PROCESSED_DIR / "legal_documents.jsonl"
 FULL_JSONL_OUTPUT = PROCESSED_DIR / "legal_documents_full.jsonl"
 RAG_READY_JSONL_OUTPUT = PROCESSED_DIR / "legal_documents_rag_ready.jsonl"
+CHUNKS_JSONL_OUTPUT = PROCESSED_DIR / "legal_documents_chunks.jsonl"
 LOG_FILE = LOG_DIR / "crawler.log"
 
 DEFAULT_LIST_URLS = [
@@ -61,7 +63,14 @@ def setup_logging(level: int = logging.INFO) -> logging.Logger:
         "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
     )
 
-    file_handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
+    log_max_mb = int(os.getenv("VBPL_LOG_MAX_MB", "50"))
+    log_backup_count = int(os.getenv("VBPL_LOG_BACKUP_COUNT", "5"))
+    file_handler = RotatingFileHandler(
+        LOG_FILE,
+        maxBytes=max(log_max_mb, 1) * 1024 * 1024,
+        backupCount=max(log_backup_count, 1),
+        encoding="utf-8",
+    )
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 

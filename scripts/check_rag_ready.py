@@ -24,6 +24,10 @@ def main() -> None:
     has_pdf = 0
     has_doc = 0
     has_docx = 0
+    has_chunks = 0
+    total_chunk_count = 0
+    low_quality = 0
+    quality_sum = 0
     preview_printed = False
 
     with path.open("r", encoding="utf-8") as f:
@@ -42,6 +46,14 @@ def main() -> None:
                 has_doc += 1
             if doc.get("docx_urls"):
                 has_docx += 1
+            quality = int(doc.get("quality_score") or 0)
+            quality_sum += quality
+            if quality < 40:
+                low_quality += 1
+            chunk_count = int(doc.get("chunk_count") or 0)
+            total_chunk_count += chunk_count
+            if chunk_count > 0:
+                has_chunks += 1
 
             if not preview_printed and content_clean:
                 print("\n=== Preview content_clean (500 chars) ===")
@@ -62,6 +74,10 @@ def main() -> None:
     print(f"documents_with_pdf_urls: {has_pdf}")
     print(f"documents_with_doc_urls: {has_doc}")
     print(f"documents_with_docx_urls: {has_docx}")
+    print(f"documents_with_chunks: {has_chunks}")
+    print(f"total_chunk_count: {total_chunk_count}")
+    print(f"avg_quality_score: {(quality_sum / total):.2f}" if total else "avg_quality_score: 0.00")
+    print(f"documents_low_quality_score_lt40: {low_quality}")
 
 
 if __name__ == "__main__":

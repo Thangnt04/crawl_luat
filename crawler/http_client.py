@@ -86,7 +86,12 @@ class HttpClient:
         response = self.session.get(url, timeout=self.config.timeout_seconds)
         self._last_request_ts = time.monotonic()
         response.raise_for_status()
-        response.encoding = response.apparent_encoding or response.encoding
+        host = (urlparse(url).hostname or "").lower()
+        if host.endswith("vbpl.vn") or host.endswith("moj.gov.vn"):
+            # Force UTF-8 for this source to avoid mojibake from wrong charset guess.
+            response.encoding = "utf-8"
+        elif not response.encoding or response.encoding.lower() in {"iso-8859-1", "latin1"}:
+            response.encoding = response.apparent_encoding or "utf-8"
         return response.text
 
     def fetch_binary(self, url: str) -> bytes:

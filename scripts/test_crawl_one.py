@@ -12,6 +12,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import (
+    CHUNKS_JSONL_OUTPUT,
     FULL_JSONL_OUTPUT,
     RAG_READY_JSONL_OUTPUT,
     RAW_FILES_DIR,
@@ -94,6 +95,40 @@ def _ensure_content_quality(parsed: dict, client: HttpClient, min_chars: int = 8
             continue
 
 
+def _fetch_parsed_detail_from_api(client: HttpClient, source_url: str) -> tuple[Path, dict] | None:
+    doc_id = extract_doc_id(source_url)
+    if not doc_id:
+        return None
+    try:
+        detail_resp = client.get_json(f"{API_BASE_URL}/qtdc/public/doc/{doc_id}")
+    except Exception as exc:  # noqa: BLE001
+        client.logger.warning("API detail failed for %s (doc_id=%s), fallback HTML: %s", source_url, doc_id, exc)
+        return None
+    detail_data = detail_resp.get("data") or {}
+    if not isinstance(detail_data, dict) or not detail_data:
+        client.logger.warning("API detail empty for %s (doc_id=%s), fallback HTML", source_url, doc_id)
+        return None
+
+    raw_html_path = _save_raw_api_payload(doc_id, detail_data)
+    file_items: list[dict] = []
+    try:
+        files_resp = client.get_json(
+            f"{API_BASE_URL}/qtdc/public/doc/minio/buckets/vbpl/folders/{doc_id}/files"
+        )
+        file_items = files_resp.get("data") or []
+    except Exception as exc:  # noqa: BLE001
+        client.logger.warning("API files list failed for %s (doc_id=%s): %s", source_url, doc_id, exc)
+
+    parsed = parse_document_detail_from_api(
+        doc_id=doc_id,
+        detail_data=detail_data,
+        file_items=file_items,
+        source_url=source_url,
+    )
+    _ensure_content_quality(parsed, client)
+    return raw_html_path, parsed
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Crawl one VBPL document URL")
     parser.add_argument("--url", required=True, help="Detail URL from vbpl.vn")
@@ -113,29 +148,17 @@ def main() -> None:
     ensure_data_dirs()
     client = _build_client(request_delay_seconds=args.request_delay_seconds)
     existing_ids, existing_urls, _ = load_existing_index(FULL_JSONL_OUTPUT)
-    doc_id = extract_doc_id(args.url)
     raw_html_path = RAW_HTML_DIR / "not_available_api_mode.html"
     parsed: dict
 
     try:
-        if doc_id:
-            detail_resp = client.get_json(f"{API_BASE_URL}/qtdc/public/doc/{doc_id}")
-            detail_data = detail_resp.get("data") or {}
-            raw_html_path = _save_raw_api_payload(doc_id, detail_data)
-            files_resp = client.get_json(
-                f"{API_BASE_URL}/qtdc/public/doc/minio/buckets/vbpl/folders/{doc_id}/files"
-            )
-            file_items = files_resp.get("data") or []
-            parsed = parse_document_detail_from_api(
-                doc_id=doc_id,
-                detail_data=detail_data,
-                file_items=file_items,
-            )
-            _ensure_content_quality(parsed, client)
-        else:
+        api_parsed = _fetch_parsed_detail_from_api(client, args.url)
+        if api_parsed is None:
             html = client.fetch_html(args.url)
             raw_html_path = _save_raw_html(args.url, html)
             parsed = parse_document_detail(args.url, html)
+        else:
+            raw_html_path, parsed = api_parsed
     except Exception as exc:  # noqa: BLE001
         client.logger.exception("Cannot crawl detail URL %s: %s", args.url, exc)
         return
@@ -164,7 +187,7 @@ def main() -> None:
     if should_skip_duplicate(record, existing_ids, existing_urls):
         client.logger.info("Skip duplicate: %s", record.get("source_url"))
         return
-    append_full_and_rag(FULL_JSONL_OUTPUT, RAG_READY_JSONL_OUTPUT, record)
+    append_full_and_rag(FULL_JSONL_OUTPUT, RAG_READY_JSONL_OUTPUT, record, CHUNKS_JSONL_OUTPUT)
     update_index(record, existing_ids, existing_urls)
     client.logger.info("Saved full record to %s", FULL_JSONL_OUTPUT)
     client.logger.info("Saved rag-ready record to %s", RAG_READY_JSONL_OUTPUT)
